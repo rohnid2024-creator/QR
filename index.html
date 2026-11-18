@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 보기</title>
+  <style>
+    /* 여백 제거 및 검은 배경으로 이미지 집중도 높이기 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: #000000; /* 배경색 (흰색을 원하면 #ffffff 로 변경) */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain; /* 비율 유지하며 화면에 꽉 차게 맞춤 */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 아래 "image.jpg" 부분을 깃허브에 함께 올릴 실제 이미지 파일명으로 수정하세요 -->
+  <img src="image.png" alt="QR 이미지">
+
+</body>
+</html>
